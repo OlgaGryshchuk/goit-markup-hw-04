@@ -12,7 +12,7 @@
 	--editional-background-color: #f5f4fa;
 	--modal-btn-hover-color: #188ce8;
 	--portfolio-cards-border-color: #eeeeee;
-	--social-icon-color: #afb1b8;
+	--icon-color: #afb1b8;
 }
 
 body {
@@ -324,7 +324,7 @@ img {
 }
 
 .social-list-icon {
-	fill: var(--social-icon-color);
+	fill: var(--icon-color);
 }
 
 .social-list-link:hover,
@@ -334,7 +334,7 @@ img {
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-	fill: #ffffff;
+	fill: var(--primary-text-color-theme-dark);
 }
 
 .team-description {
@@ -427,6 +427,37 @@ img {
 	color: var(--secondary-text-color-theme-light);
 }
 
+/* REGULAR COSTUMERS */
+
+.costumers-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.costumers-list-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid var(--icon-color);
+	border-radius: 4px;
+}
+
+.costumers-list-icon {
+	fill: var(--icon-color);
+}
+
+.costumers-list-link:hover,
+.costumers-list-link:focus {
+	border-color: var(--accent-color);
+}
+
+.costumers-list-link:hover .costumers-list-icon,
+.costumers-list-link:focus .costumers-list-icon {
+	fill: var(--accent-color);
+}
+
 /* FOOTER */
 
 .footer {
@@ -434,11 +465,18 @@ img {
 }
 
 .footer-container {
+	display: flex;
+	align-items: baseline;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+
 .logo-footer {
 	color: var(--primary-text-color-theme-dark);
+}
+
+.container .adress:not(:last-child) {
+	margin-right: 70px;
 }
 
 .adress-list {
@@ -471,4 +509,37 @@ img {
 .adress-list-link-contact:hover,
 .adress-list-link-contact:focus {
 	color: var(--accent-color);
+}
+
+.join-title {
+	margin-bottom: 20px;
+	font-size: inherit;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--primary-text-color-theme-dark);
+}
+
+.footer-social-list {
+	display: flex;
+	width: 206px;
+	margin: o auto;
+	justify-content: space-between;
+}
+
+.footer-social-list-link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover {
+	background-color: var(--accent-color);
+}
+
+.footer-social-list-icon {
+	fill: var(--primary-text-color-theme-dark);
 }
